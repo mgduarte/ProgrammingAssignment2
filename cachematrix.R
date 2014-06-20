@@ -8,7 +8,11 @@
 #When executing program: 
                 ##  mtrx <-c(1,2,3,4); mtrx <-matrix(mtrx,2,2)
                 ##  inv<-makeCacheMatrix(mtrx)
-                ##  cacheSolve(mtrx)
+                ##  inv$get()
+                ##  inv$set(matrix(3:6,2))
+                ##  inv$get()
+                ##  cacheSolve(inv)
+                ##  cacheSove(inv)
 #Write the following functions:
 #1)makeCacheMatrix: This function creates a special "matrix" #object that can cache its inverse.
 ## Write a short comment describing this function
