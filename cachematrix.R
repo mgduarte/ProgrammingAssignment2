@@ -11,9 +11,6 @@
                 ##  cacheSolve(mtrx)
 #Write the following functions:
 #1)makeCacheMatrix: This function creates a special "matrix" #object that can cache its inverse.
-
-
-
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
