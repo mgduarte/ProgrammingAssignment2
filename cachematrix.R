@@ -51,7 +51,7 @@ cacheSolve <- function(mtrx, ...) {
                 return(m)
         }
         data <- mtrx$get()
-        ## I could probably have skipped data step and solve(mtrx$get()), but might be more cpu for that computation.
+        ## I could probably have skipped data step and solve(mtrx$get()), but might be more cpu for that computation?
         m <- solve(data, ...)
         mtrx$setinv(m)
         m
