@@ -7,13 +7,13 @@
 #matrix.
 #When executing program: 
                 ##  mtrx <-c(1,2,3,4); mtrx <-matrix(mtrx,2,2)
-                ##  mtrx<-makeCacheMatrix()
+                ##  inv<-makeCacheMatrix(mtrx)
                 ##  cacheSolve(mtrx)
 #Write the following functions:
 #1)makeCacheMatrix: This function creates a special "matrix" #object that can cache its inverse.
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(mtrx = matrix()) {
 #make sure an actual matrix is passed, else stop
         if(!is.matrix(mtrx)) stop("mtrx isn't a matrix")
         m <- NULL
@@ -39,7 +39,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##retrieve the inverse from the cache.
 
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(mtrx, ...) {
         ## Return a matrix that is the inverse of 'x'
  m <- mtrx$getinv()
         if(!is.null(m)) {
